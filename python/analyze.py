@@ -57,13 +57,3 @@ def compute_structure_factor(x, y, r, NF=512):
     # return the structure factor, radially averaged structure factor
     # and the modes associated with the bins for radially averaging
     return Sq, rSq, rv
-
-    # plot the structure factor
-    fig, [ax0, ax1] = plt.subplots(1, 2, figsize=(12,6))
-    ax0.imshow(Sq)
-    ax0.set(xticks=[], yticks=[], xticklabels=[], yticklabels=[])
-    ax1.plot(rv, rSq, color='black', linewidth=3)
-
-
-
-
