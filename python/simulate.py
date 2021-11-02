@@ -24,7 +24,7 @@ error_tol = 1.0e-6   # error tolerance for DOP853 Timestepper
 sd_number = 1.0      # saffman-delbruck number (only used if kernel=='sd')
 
 
-if True: # QSG + steric, same circulation 
+if True: # Full SD + steric, same circulation 
 
 	kernel = 'sd'        # kernel to use ('euler', 'qsg', 'sd')
 	steric = True        # whether to include steric interactions
